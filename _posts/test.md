@@ -3,6 +3,7 @@ layout: post
 title:  "Markdown editor"
 author: sal
 categories: [ Jekyll, tutorial ]
+permalink: "/test/"
 image: assets/images/4.jpg
 featured: true
 ---
