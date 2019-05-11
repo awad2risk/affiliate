@@ -6,20 +6,12 @@
 <link rel="icon" href="{{ site.baseurl }}/assets/images/favicon.png">    
 <title>{{ page.title }} | {{site.name}}</title>
 {% seo %}
-<link rel="preload" href="{{ site.baseurl }}/assets/css/theme.css" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="preload" href="{{ site.baseurl }}/assets/css/custom.css" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
     
-<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    </noscript>
-<script>
-/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-(function(){ ... }());
-</script>
     
 {% if jekyll.environment == 'production' %}    
 <script>
@@ -137,11 +129,11 @@
                 <div class="col-md-8">
                     <h3>This is your final call to action area. Shine like a star, make them want you, tell 'em to push that button!</h3>
                     <p>We offer a <span>30 Day Money Back Guarantee</span>, so joining is <span class="risk-free">Risk-Free!</span></p>
-                    <a class="btn btn-primary btn-lg" href="#">Join us now</a>
+                    <a class="btn btn-primary btn-lg" href="#">Join us yesterday</a>
                 </div>
                 <div class="col-md-4 text-right footersocial">
                     <h5>Connect with Us</h5>
-                    <a href="/"><i class="fa fa-facebook"></i></a>
+                    <i class="fa fa-facebook"></i>
                     <i class="fa fa-twitter"></i>
                         <i class="fa fa-google"></i>
                      <i class="fa fa-pinterest"></i>
@@ -234,7 +226,8 @@
     
 <script type='text/javascript' src='{{ site.baseurl }}/assets/js/masonry.pkgd.min.js'></script>
     
-<script src="{{ site.baseurl }}/assets/js/theme.js"></script>    
+<script src="{{ site.baseurl }}/assets/js/theme.js"></script>  
+    
     {{site.sharethis}}
 </body>
     
